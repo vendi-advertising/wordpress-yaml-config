@@ -1,5 +1,28 @@
 {
-    "require": {
-        "psr/log": "^1.1"
+  "name": "vendi-advertising/wordpress-yaml-config",
+  "description": "Store WordPress config in YAML files",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Chris Haas",
+      "email": "chris@vendiadvertising.com"
     }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "psr/log": "^1.1"
+  },
+  "require-dev": {
+    "sensiolabs/security-checker": "^5",
+    "symfony/var-dumper": "^5"
+  },
+  "config": {
+    "optimize-autoloader": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Vendi\\WordPressYaml\\": "src/"
+    }
+  }
 }
